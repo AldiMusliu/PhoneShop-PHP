@@ -1,0 +1,77 @@
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color:#e3f6f5
+}
+.sliderContent {
+  background-color: white;
+  width: 380px;
+  margin: 0 auto;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+  border: 3px solid rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+}
+.sliderContent p {
+  display: none;
+  color: rgb(39, 36, 36);
+}
+.sliderContent p.active {
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 2px 1px #00d9ff7e;
+  padding: 0 50px;
+  display: block;
+}
+.silderButtons {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+.silderButtons .prevButton{
+  margin-left: 10px;
+}
+.silderButtons .nextButton{
+  margin-right: 10px;
+}
+.silderButtons button{
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  font-weight: 600;
+}
+.silderButtons button:hover{
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+@media only screen and (min-width: 680px) {
+  .sliderContent {
+      width: 600px;
+  }
+  .sliderContent p.active {
+      font-size: 20px;
+      padding: 20px 80px;
+  }
+}
+@media only screen and (min-width: 960px) {
+  .sliderContent {
+      width: 700px;
+  }
+  .sliderContent p.active {
+      font-size: 25px;
+      padding: 50px 100px;
+  }
+}
