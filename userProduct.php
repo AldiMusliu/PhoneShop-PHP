@@ -8,7 +8,6 @@ if (!isset($_SESSION['user']) || $_SESSION['user'] != "user") {
 }
 
 $Products = new Products();
-$message = '';
 if (isset($_GET["action"])) {
     if ($_GET["action"] == "show") {
         $id = $_GET['id'];

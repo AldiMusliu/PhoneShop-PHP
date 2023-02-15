@@ -23,7 +23,7 @@ h1{
     font-size: 45px;
     margin: 0 auto;
 }
-h1> span{
+h1 span{
     color: var(--buttonBg);
 }
 .reasons{
